@@ -1,0 +1,195 @@
+{
+  "posts": [
+    {
+      "id": "climate-momentum",
+      "title": "Climate Momentum: Powering Change with Data",
+      "date": "2026-05-20",
+      "author": "Ava Torres",
+      "summary": "A mixed-media exploration of climate trends, civic action, and solutions that deliver measurable results.",
+      "cards": [
+        {
+          "type": "text",
+          "title": "Why data matters",
+          "body": "Sharing clear, accessible climate data turns concern into action.\nWhen people see the progress we make together, they are more likely to stay engaged."
+        },
+        {
+          "type": "image",
+          "title": "Climate advocacy in motion",
+          "layout": "single",
+          "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
+          "caption": "Volunteer organizers gather in a coastal community to build resilient climate campaigns."
+        },
+        {
+          "type": "big-number",
+          "title": "Community momentum",
+          "stat": "+55,000",
+          "description": "volunteers engaged across 18 campaigns this year."
+        },
+        {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "Renewable Capacity Growth",
+          "subtitle": "Installed energy capacity in gigawatts across recent years.",
+          "labels": ["2016", "2018", "2020", "2022", "2024"],
+          "data": [450, 520, 610, 720, 840]
+        },
+        {
+          "type": "quote",
+          "text": "The strongest weapon against climate change is hope paired with action.",
+          "author": "Dr. Nia Rahman"
+        },
+        {
+          "type": "comparison",
+          "title": "Then vs. Now",
+          "leftTitle": "Before",
+          "leftText": "Few cities tracked climate performance with local metrics.",
+          "rightTitle": "Today",
+          "rightText": "Coastal communities use data dashboards to monitor resilience outcomes."
+        },
+        {
+          "type": "link",
+          "title": "Featured analysis",
+          "description": "Explore a curated climate research brief with practical policy recommendations.",
+          "url": "https://www.unep.org/resources",
+          "urlLabel": "View UNEP resources"
+        },
+        {
+          "type": "timeline",
+          "title": "Recent climate wins",
+          "events": [
+            {
+              "time": "Jan 2026",
+              "description": "A regional coalition passed a zero-emissions transit commitment.",
+              "image": "https://images.unsplash.com/photo-1542831371-d531d36971e6?auto=format&fit=crop&w=1200&q=80"
+            },
+            {
+              "time": "Mar 2026",
+              "description": "Restoration teams planted 22,000 mangroves along storm-prone shoreline.",
+              "image": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+            },
+            {
+              "time": "May 2026",
+              "description": "Public workshops launched energy-saving programs for schools and community centers."
+            }
+          ]
+        },
+        {
+          "type": "qa",
+          "title": "Frequently asked questions",
+          "items": [
+            {
+              "q": "How can individuals make an impact?",
+              "a": "Vote for climate-safe policy, support local advocacy groups, and reduce energy waste at home."
+            },
+            {
+              "q": "What role do stories play?",
+              "a": "Stories build empathy and make statistics feel human, which helps turn audiences into advocates."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ocean-restoration",
+      "title": "Keeping Oceans Cool: Restoration and Resilience",
+      "date": "2026-04-28",
+      "author": "Noah Kim",
+      "summary": "Designing coastal resilience with nature-based solutions, science-backed campaigns, and communal stewardship.",
+      "cards": [
+        {
+          "type": "text",
+          "title": "Nature-based resilience",
+          "body": "Ocean restoration helps reduce heat and storm risk while supporting biodiversity.\nThis story highlights how coastal communities protect both people and habitat."
+        },
+        {
+          "type": "image",
+          "title": "Restoration in action",
+          "layout": "multiple",
+          "items": [
+            {
+              "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
+              "alt": "Volunteers planting mangroves",
+              "caption": "Volunteers restoring mangrove forests."
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1531327436216-2bd23f8eadbd?auto=format&fit=crop&w=900&q=80",
+              "alt": "Researchers monitoring coastal habitat",
+              "caption": "Scientists tracking shoreline recovery."
+            }
+          ]
+        },
+        {
+          "type": "chart",
+          "chartType": "line",
+          "title": "Surface temperature decline",
+          "subtitle": "Ocean cooling trends after protection efforts begin.",
+          "labels": ["2020", "2021", "2022", "2023", "2024"],
+          "data": [0.9, 0.7, 0.55, 0.4, 0.28]
+        },
+        {
+          "type": "chart",
+          "chartType": "pie",
+          "title": "Funding allocation",
+          "subtitle": "How restoration budgets are distributed.",
+          "labels": ["Restoration", "Education", "Policy", "Research"],
+          "data": [42, 23, 18, 17]
+        },
+        {
+          "type": "chart",
+          "chartType": "scatter",
+          "title": "Engagement vs. risk reduction",
+          "subtitle": "The relationship between community participation and coastal protection outcomes.",
+          "data": [[12, 4.1], [20, 5.5], [28, 6.2], [35, 7.8], [46, 9.1]]
+        },
+        {
+          "type": "chart",
+          "chartType": "table",
+          "title": "Restoration progress summary",
+          "columns": ["Project", "Status", "Impact"],
+          "rows": [
+            ["Harbor reef rebuild", "Complete", "Reduced storm surge by 18%"],
+            ["Community wetlands", "In progress", "50% vegetation cover"],
+            ["School outreach", "Active", "2,200 students engaged"]
+          ]
+        },
+        {
+          "type": "chart",
+          "chartType": "radar",
+          "title": "Resilience scorecard",
+          "subtitle": "Comparing ecosystem benefits across restoration themes.",
+          "labels": ["Flood control", "Carbon storage", "Habitat", "Education", "Policy"],
+          "data": [8, 7, 9, 6, 7]
+        },
+        {
+          "type": "image",
+          "title": "Campaign storytelling carousel",
+          "layout": "carousel",
+          "items": [
+            {
+              "src": "https://images.unsplash.com/photo-1511819893782-d7b2671f3d41?auto=format&fit=crop&w=1200&q=80",
+              "alt": "Volunteers collecting data at sea"
+            },
+            {
+              "src": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80",
+              "alt": "Community meeting at the shoreline"
+            }
+          ]
+        },
+        {
+          "type": "qa",
+          "title": "Reader questions",
+          "items": [
+            {
+              "q": "What makes coastal restoration so effective?",
+              "a": "Restoration harnesses natural systems to absorb heat, reduce erosion, and support fisheries in ways engineered structures cannot."
+            },
+            {
+              "q": "Can a single community make a difference?",
+              "a": "Yes. Local action cascades into policy change, public awareness, and stronger regional resilience."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
