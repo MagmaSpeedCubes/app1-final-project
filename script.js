@@ -1,5 +1,17 @@
 const postListEl = document.getElementById('post-list');
 const postContentEl = document.getElementById('post-content');
+const chartTheme = {
+  ink: '#0f2e38',
+  muted: '#566d77',
+  grid: 'rgba(15, 46, 56, 0.12)',
+  teal: '#0f8a88',
+  tealDeep: '#0c6a70',
+  lime: '#7cd945',
+  coral: '#ff5a2f',
+  card: 'rgba(255, 255, 255, 0.34)',
+  coralSoft: 'rgba(255, 90, 47, 0.18)'
+};
+const chartFont = '"Avenir Next", "Segoe UI", sans-serif';
 
 async function fetchPosts() {
   try {
@@ -194,7 +206,7 @@ function renderChart(container, card) {
   canvas.width = width;
   canvas.height = height;
   ctx.clearRect(0, 0, width, height);
-  ctx.fillStyle = 'rgba(255,255,255,0.04)';
+  ctx.fillStyle = chartTheme.card;
   ctx.fillRect(0, 0, width, height);
 
   if (chartType === 'bar') drawBarChart(ctx, width, height, card);
@@ -224,8 +236,9 @@ function drawBarChart(ctx, width, height, card) {
   const max = Math.max(...values, 1);
   const padding = 60;
   const barWidth = (width - padding * 2) / values.length - 18;
+  const palette = [chartTheme.teal, chartTheme.lime, chartTheme.coral, '#7ecfd2', chartTheme.tealDeep];
 
-  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+  ctx.strokeStyle = chartTheme.grid;
   ctx.lineWidth = 1;
   for (let i = 0; i <= 5; i += 1) {
     const y = padding + ((height - padding * 2) / 5) * i;
@@ -238,10 +251,10 @@ function drawBarChart(ctx, width, height, card) {
   values.forEach((value, index) => {
     const x = padding + index * (barWidth + 18);
     const barHeight = ((value / max) * (height - padding * 2)) || 0;
-    ctx.fillStyle = 'rgba(124, 229, 167, 0.9)';
+    ctx.fillStyle = palette[index % palette.length];
     ctx.fillRect(x, height - padding - barHeight, barWidth, barHeight);
-    ctx.fillStyle = '#fff';
-    ctx.font = '600 13px Inter, sans-serif';
+    ctx.fillStyle = chartTheme.ink;
+    ctx.font = `600 13px ${chartFont}`;
     ctx.fillText(labels[index] || '', x, height - padding + 20);
   });
 }
@@ -253,7 +266,7 @@ function drawLineChart(ctx, width, height, card) {
   const padding = 60;
   const step = (width - padding * 2) / (values.length - 1 || 1);
 
-  ctx.strokeStyle = 'rgba(124, 229, 167, 0.9)';
+  ctx.strokeStyle = chartTheme.coral;
   ctx.lineWidth = 4;
   ctx.beginPath();
   values.forEach((value, index) => {
@@ -264,15 +277,17 @@ function drawLineChart(ctx, width, height, card) {
   });
   ctx.stroke();
 
-  ctx.fillStyle = 'rgba(124, 229, 167, 0.95)';
+  ctx.fillStyle = chartTheme.teal;
   values.forEach((value, index) => {
     const x = padding + index * step;
     const y = height - padding - (value / max) * (height - padding * 2);
     ctx.beginPath();
     ctx.arc(x, y, 5, 0, Math.PI * 2);
     ctx.fill();
-    ctx.font = '13px Inter, sans-serif';
+    ctx.fillStyle = chartTheme.ink;
+    ctx.font = `13px ${chartFont}`;
     ctx.fillText(labels[index] || '', x - 18, height - padding + 20);
+    ctx.fillStyle = chartTheme.teal;
   });
 }
 
@@ -284,7 +299,7 @@ function drawPieChart(ctx, width, height, card) {
   const radius = Math.min(width, height) * 0.28;
   const centerX = width / 2;
   const centerY = height / 2;
-  const palette = ['#7ce5a7', '#44d68e', '#67c8b0', '#a9f0d6', '#2ea57e'];
+  const palette = [chartTheme.teal, chartTheme.lime, chartTheme.coral, '#7ecfd2', chartTheme.tealDeep];
 
   values.forEach((value, index) => {
     const slice = (value / total) * Math.PI * 2;
@@ -297,8 +312,8 @@ function drawPieChart(ctx, width, height, card) {
     const mid = start + slice / 2;
     const labelX = centerX + Math.cos(mid) * (radius + 20);
     const labelY = centerY + Math.sin(mid) * (radius + 20);
-    ctx.fillStyle = '#fff';
-    ctx.font = '600 12px Inter, sans-serif';
+    ctx.fillStyle = chartTheme.ink;
+    ctx.font = `600 12px ${chartFont}`;
     ctx.fillText(labels[index] || '', labelX, labelY);
     start += slice;
   });
@@ -310,22 +325,22 @@ function drawScatterChart(ctx, width, height, card) {
   const yMax = Math.max(...points.map((p) => p[1]), 1);
   const padding = 60;
 
-  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+  ctx.strokeStyle = chartTheme.grid;
   ctx.lineWidth = 1;
   for (let i = 0; i <= 5; i += 1) {
     const x = padding + ((width - padding * 2) / 5) * i;
-    const y = padding + ((height - padding * 2) / 5) * i;
+    const y = height - padding - ((height - padding * 2) / 5) * i;
     ctx.beginPath();
     ctx.moveTo(x, padding);
     ctx.lineTo(x, height - padding);
     ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(padding, height - padding - y + padding);
-    ctx.lineTo(width - padding, height - padding - y + padding);
+    ctx.moveTo(padding, y);
+    ctx.lineTo(width - padding, y);
     ctx.stroke();
   }
 
-  ctx.fillStyle = '#7ce5a7';
+  ctx.fillStyle = chartTheme.teal;
   points.forEach((point) => {
     const x = padding + ((width - padding * 2) * point[0]) / xMax;
     const y = height - padding - ((height - padding * 2) * point[1]) / yMax;
@@ -344,7 +359,7 @@ function drawRadarChart(ctx, width, height, card) {
   const centerX = width / 2;
   const centerY = height / 2;
 
-  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+  ctx.strokeStyle = chartTheme.grid;
   ctx.lineWidth = 1;
   for (let level = 1; level <= 4; level += 1) {
     ctx.beginPath();
@@ -359,8 +374,9 @@ function drawRadarChart(ctx, width, height, card) {
     ctx.stroke();
   }
 
-  ctx.strokeStyle = 'rgba(124, 229, 167, 0.95)';
-  ctx.fillStyle = 'rgba(124, 229, 167, 0.25)';
+  ctx.strokeStyle = chartTheme.coral;
+  ctx.fillStyle = chartTheme.coralSoft;
+  ctx.font = `600 12px ${chartFont}`;
   ctx.beginPath();
   values.forEach((value, index) => {
     const angle = (Math.PI * 2 * index) / count - Math.PI / 2;
@@ -369,7 +385,9 @@ function drawRadarChart(ctx, width, height, card) {
     const y = centerY + Math.sin(angle) * r;
     if (index === 0) ctx.moveTo(x, y);
     else ctx.lineTo(x, y);
+    ctx.fillStyle = chartTheme.ink;
     ctx.fillText(labels[index] || '', x + 8, y + 6);
+    ctx.fillStyle = chartTheme.coralSoft;
   });
   ctx.closePath();
   ctx.fill();
