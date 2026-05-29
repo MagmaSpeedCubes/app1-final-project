@@ -2,41 +2,41 @@
   "posts": [
     {
       "id": "climate-momentum",
-      "title": "Climate Momentum: Powering Change with Data",
+      "title": "Sustainable Transportation and Smarter Cities",
       "date": "2026-05-20",
       "author": "Ava Torres",
-      "summary": "A mixed-media exploration of climate trends, civic action, and solutions that deliver measurable results.",
+      "summary": "Exploring how public transportation, walkable communities, and cleaner infrastructure improve urban sustainability",
       "cards": [
         {
           "type": "text",
-          "title": "Why data matters",
-          "body": "Sharing clear, accessible climate data turns concern into action.\nWhen people see the progress we make together, they are more likely to stay engaged."
+          "title": "Why transportation matters",
+          "body": "Transportation systems shape the efficiency and environmental impact of cities.\nExpanding public transit and reducing car dependency lowers emissions and improves quality of life."
         },
         {
           "type": "image",
-          "title": "Climate advocacy in motion",
+          "title": "Public transportation in action",
           "layout": "single",
           "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80",
-          "caption": "Volunteer organizers gather in a coastal community to build resilient climate campaigns."
+          "caption": "Modern transit systems help reduce congestion and pollution in growing cities."
         },
         {
           "type": "big-number",
-          "title": "Community momentum",
-          "stat": "+55,000",
-          "description": "volunteers engaged across 18 campaigns this year."
+          "title": "Urban transit usage",
+          "stat": "55%",
+          "description": "of the global population now lives in urban areas."
         },
         {
           "type": "chart",
           "chartType": "bar",
-          "title": "Renewable Capacity Growth",
-          "subtitle": "Installed energy capacity in gigawatts across recent years.",
+          "title": "Growth of Public Transportation Usage",
+          "subtitle": "Estimated increase in transit ridership over recent years.",
           "labels": ["2016", "2018", "2020", "2022", "2024"],
           "data": [450, 520, 610, 720, 840]
         },
         {
           "type": "quote",
-          "text": "The strongest weapon against climate change is hope paired with action.",
-          "author": "Dr. Nia Rahman"
+          "text": "The future of cities depends on how efficiently people can move through them.",
+          "author": "Dr. Maya Chen"
         },
         {
           "type": "comparison",
@@ -48,10 +48,10 @@
         },
         {
           "type": "link",
-          "title": "Featured analysis",
-          "description": "Explore a curated climate research brief with practical policy recommendations.",
+          "title": "Urban planning resources",
+          "description": "Explore sustainable city planning strategies and transportation policies.",
           "url": "https://www.unep.org/resources",
-          "urlLabel": "View UNEP resources"
+          "urlLabel": "View urban planning resources"
         },
         {
           "type": "timeline",
@@ -91,47 +91,47 @@
     },
     {
       "id": "ocean-restoration",
-      "title": "Keeping Oceans Cool: Restoration and Resilience",
+      "title": "Green Infrastructure and Urban Resilience",
       "date": "2026-04-28",
       "author": "Noah Kim",
-      "summary": "Designing coastal resilience with nature-based solutions, science-backed campaigns, and communal stewardship.",
+      "summary": "How parks, green roofs, and urban forests help cities adapt to climate and population growth.",
       "cards": [
         {
           "type": "text",
-          "title": "Nature-based resilience",
-          "body": "Ocean restoration helps reduce heat and storm risk while supporting biodiversity.\nThis story highlights how coastal communities protect both people and habitat."
+          "title": "The role of green spaces",
+          "body": "Urban green infrastructure improves air quality, reduces temperatures, and supports healthier communities.\nCities with more green space are often more resilient to heat and pollution."
         },
         {
           "type": "image",
-          "title": "Restoration in action",
+          "title": "Urban green projects",
           "layout": "multiple",
           "items": [
             {
               "src": "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80",
               "alt": "Volunteers planting mangroves",
-              "caption": "Volunteers restoring mangrove forests."
+              "caption": "Parks and trees help reduce urban heat islands."
             },
             {
               "src": "https://images.unsplash.com/photo-1531327436216-2bd23f8eadbd?auto=format&fit=crop&w=900&q=80",
               "alt": "Researchers monitoring coastal habitat",
-              "caption": "Scientists tracking shoreline recovery."
+              "caption": "Green roofs improve energy efficiency in dense cities."
             }
           ]
         },
         {
           "type": "chart",
           "chartType": "line",
-          "title": "Surface temperature decline",
-          "subtitle": "Ocean cooling trends after protection efforts begin.",
+          "title": "Urban temperature reduction.",
+          "subtitle": "Average temperature decreases after green infrastructure expansion.",
           "labels": ["2020", "2021", "2022", "2023", "2024"],
           "data": [0.9, 0.7, 0.55, 0.4, 0.28]
         },
         {
           "type": "chart",
           "chartType": "pie",
-          "title": "Funding allocation",
+          "title": "Green infrastructure investment",
           "subtitle": "How restoration budgets are distributed.",
-          "labels": ["Restoration", "Education", "Policy", "Research"],
+          "labels": ["Parks", "Transit", "Energy", "Housing"],
           "data": [42, 23, 18, 17]
         },
         {
@@ -162,7 +162,7 @@
         },
         {
           "type": "image",
-          "title": "Campaign storytelling carousel",
+          "title": "Sustainable city gallery",
           "layout": "carousel",
           "items": [
             {
@@ -180,8 +180,8 @@
           "title": "Reader questions",
           "items": [
             {
-              "q": "What makes coastal restoration so effective?",
-              "a": "Restoration harnesses natural systems to absorb heat, reduce erosion, and support fisheries in ways engineered structures cannot."
+              "q": "How do green spaces reduce heat?",
+              "a": "Trees and vegetation provide shade and cool the surrounding environment through evapotranspiration."
             },
             {
               "q": "Can a single community make a difference?",
